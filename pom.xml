@@ -12,10 +12,11 @@
         <module>eureka-server</module>
         <module>cloud-provider-payment</module>
         <module>common</module>
-        <module>consumer</module>
         <module>cloud-consumer-order</module>
         <module>eureka-server1</module>
         <module>cloud-provider-payment1</module>
+        <module>cloud-provider-zookeeper</module>
+        <module>cloud-provider-consul</module>
     </modules>
 
     <name>cloud</name>
