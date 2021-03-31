@@ -1,9 +1,9 @@
 server:
-  port: 6002
+  port: 80
 
 spring:
   application:
-    name: cloud-consumer-order-openfeign
+    name: cloud-consumer-order
 
 eureka:
   client:
