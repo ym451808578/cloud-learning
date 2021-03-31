@@ -17,6 +17,7 @@
         <module>cloud-provider-payment1</module>
         <module>cloud-provider-zookeeper</module>
         <module>cloud-provider-consul</module>
+        <module>cloud-consumer-order-ribbon</module>
     </modules>
 
     <name>cloud</name>
