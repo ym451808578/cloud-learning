@@ -49,4 +49,14 @@ public class PaymentController {
     public String getLb() {
         return "当前服务端口：" + serverPort;
     }
+
+    @GetMapping("/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "当前服务端口：" + serverPort;
+    }
 }
