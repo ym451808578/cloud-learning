@@ -19,6 +19,10 @@
         <module>cloud-provider-consul</module>
         <module>cloud-consumer-order-ribbon</module>
         <module>cloud-consumer-order-openfeign</module>
+        <module>cloud-provider-hystrix-payment</module>
+        <module>cloud-consumer-hystrix-order</module>
+        <module>cloud-hystrix-dashboard</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <name>cloud</name>
