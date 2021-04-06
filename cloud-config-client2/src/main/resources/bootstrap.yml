@@ -1,5 +1,5 @@
 server:
-  port: 3333
+  port: 3335
 
 eureka:
   client:
@@ -14,15 +14,13 @@ eureka:
       defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
 spring:
   application:
-    name: cloud-config-server
+    name: cloud-config-client
   cloud:
     config:
-      server:
-        git:
-          uri: https://gitee.com/ym451808578/cloud-config.git  #git仓库地址
-          search-paths: #搜索目录
-            - cloud-config
-          default-label: master   #分支
+      label: master  #分支名称
+      name: config  #配置文件名称
+      profile: dev   #后缀名称    组合后表示master分支上的config-dev.yml配置文件
+      uri: http://localhost:3333   #配置中心地址  即 http://localhost:3333/master/config-dev.yml
   rabbitmq:
     host: localhost
     port: 5672
@@ -33,7 +31,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: "bus-refresh"
-  endpoint:
-    bus-refresh:
-      enabled: true
+        include: "*"
