@@ -1,0 +1,11 @@
+server:
+  port: 91
+spring:
+  application:
+    name: nacos-consumer-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+service-url:
+  nacos-payment-service: http://nacos-provider-payment
