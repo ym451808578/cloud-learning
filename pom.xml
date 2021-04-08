@@ -32,6 +32,7 @@
         <module>cloud-alibaba-provider-payment1</module>
         <module>cloud-alibaba-provider-payment2</module>
         <module>cloud-alibaba-consumer-order1</module>
+        <module>cloud-alibaba-config-nacos</module>
     </modules>
 
     <name>cloud</name>
@@ -108,7 +109,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <build>
         <plugins>

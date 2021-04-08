@@ -1,0 +1,19 @@
+server:
+  port: 3333
+
+spring:
+  application:
+    name: nacos-config-test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        group: DEV_GROUP
+        namespace: dbe96680-968a-4e08-80b0-90bbdbfad134
+
+  # 对应dataId格式 ${prefix}-${spring.profiles.active}.${file-extension}
+  # prefix默认为spring.application.name
+  #因此，对应的文件为：nacos-config-test-dev.yaml
