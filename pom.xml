@@ -33,6 +33,7 @@
         <module>cloud-alibaba-provider-payment2</module>
         <module>cloud-alibaba-consumer-order1</module>
         <module>cloud-alibaba-config-nacos</module>
+        <module>cloud-alibaba-sentinel-service</module>
     </modules>
 
     <name>cloud</name>
@@ -52,11 +53,11 @@
     </properties>
     <dependencyManagement>
         <dependencies>
-            <!--spring boot 2.3.9-->
+            <!--spring boot 2.2.5-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.9.RELEASE</version>
+                <version>2.2.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
