@@ -34,6 +34,9 @@
         <module>cloud-alibaba-consumer-order1</module>
         <module>cloud-alibaba-config-nacos</module>
         <module>cloud-alibaba-sentinel-service</module>
+        <module>cloud-alibaba-nacos-sentinel-payment1</module>
+        <module>cloud-alibaba-nacos-sentinel-payment2</module>
+        <module>cloud-alibaba-nacos-sentinel-consumer</module>
     </modules>
 
     <name>cloud</name>

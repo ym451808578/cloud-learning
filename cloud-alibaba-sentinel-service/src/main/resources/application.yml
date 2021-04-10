@@ -11,6 +11,14 @@ spring:
       transport:
         dashboard: localhost:8080
         port: 8719
+      datasource:
+        ds1:
+          nacos:
+            server-addr: http://localhost:8848
+            dataId: nacos-sentinel-service-config
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
 
 
 management:
