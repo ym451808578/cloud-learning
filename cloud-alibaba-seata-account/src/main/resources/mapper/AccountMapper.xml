@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.seata.mapper.AccountMapper">
+    <resultMap id="BaseResultMap" type="com.example.seata.entity.Account">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="user_id" property="userId" jdbcType="BIGINT"/>
+        <result column="total" property="total" jdbcType="INTEGER"/>
+        <result column="used" property="used" jdbcType="INTEGER"/>
+        <result column="residue" property="residue" jdbcType="INTEGER"/>
+    </resultMap>
+    <update id="decrease">
+        UPDATE t_account
+        <set>
+            <if test="money!=null">
+                used=used+#{money},residue=residue-#{money}
+            </if>
+        </set>
+        WHERE user_id=#{userId}
+    </update>
+</mapper>

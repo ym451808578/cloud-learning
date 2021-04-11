@@ -37,6 +37,9 @@
         <module>cloud-alibaba-nacos-sentinel-payment1</module>
         <module>cloud-alibaba-nacos-sentinel-payment2</module>
         <module>cloud-alibaba-nacos-sentinel-consumer</module>
+        <module>cloud-alibaba-seata-order</module>
+        <module>cloud-alibaba-seata-storage</module>
+        <module>cloud-alibaba-seata-account</module>
     </modules>
 
     <name>cloud</name>
@@ -56,27 +59,27 @@
     </properties>
     <dependencyManagement>
         <dependencies>
-            <!--spring boot 2.2.5-->
+            <!--spring boot 2.3.2-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.2.5.RELEASE</version>
+                <version>2.3.2.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud Hoxton.SR10-->
+            <!--spring cloud Hoxton.SR8-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR10</version>
+                <version>Hoxton.SR8</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud alibaba 2.2.1.RELEASE-->
+            <!--spring cloud alibaba 2.2.5.RELEASE-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.2.1.RELEASE</version>
+                <version>2.2.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
